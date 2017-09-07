@@ -1,5 +1,6 @@
-{
-    "entries": [
+angular.module('listings').factory('Listings', function() {
+  var listings = {
+    entries : [
         {
             "code": "AAF",
             "name": "Academic Advisement - Farrior Hall",
@@ -1267,6 +1268,8 @@
                 "longitude": -82.3478071
             },
             "address": "Gainesville, FL 32608, United States"
-        }
-    ]
-}
+        }]
+    };
+
+    return listings.entries;
+});
